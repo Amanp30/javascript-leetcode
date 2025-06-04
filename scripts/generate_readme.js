@@ -11,6 +11,12 @@ The goal is to demonstrate different approaches and help improve problem-solving
 All solutions have been tested using a custom script. Most of them should work correctly,  
 though there may be occasional breakages depending on edge cases or updates on LeetCode's platform.
 
+📚 I also write about **Node.js**, backend development, and JavaScript on my blog:  
+👉 [https://amanpareek.in](https://amanpareek.in)
+
+🛠️ You can also check out my other projects here:  
+👉 [https://amanpareek.in/projects.html](https://amanpareek.in/projects.html)
+
 > 🚫 This project does not currently accept external contributions, as all content is generated dynamically from a MongoDB database.
 `;
 
@@ -31,7 +37,7 @@ async function generateReadme() {
 
     data.forEach((doc, index) => {
       const safeTitle = doc.title.replace(/\|/g, "\\|"); // Escape pipes
-      const link = `[Link](./solutions/${doc.slug})`;
+      const link = `[Link](./solutions/${doc.slug}.md)`;
       tableSection += `| ${index + 1} | ${safeTitle} | ${link} |\n`;
     });
 
