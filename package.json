@@ -1,0 +1,18 @@
+{
+  "name": "javascript-leetcode",
+  "version": "1.0.0",
+  "description": "My LeetCode JavaScript Solutions with multiple approaches.",
+  "main": "index.js",
+  "scripts": {
+    "generate:solutions": "node scripts/generate_solutions.js",
+    "generate:readme": "node scripts/generate_readme.js",
+    "generate:all": "npm run generate:solutions && npm run generate:readme"
+  },
+  "author": "Aman Pareek",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "mongoose": "^8.15.1",
+    "turndown": "^7.2.0"
+  }
+}
